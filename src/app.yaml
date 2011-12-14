@@ -1,0 +1,22 @@
+application: webapp2-example
+version: 1
+runtime: python27
+api_version: 1
+threadsafe: true
+
+
+libraries:
+- name: webob
+  version: latest
+- name: webapp2
+  version: latest
+- name: jinja2
+  version: latest
+- name: markupsafe                                                              
+  version: latest 
+  
+handlers:
+- url: /.*
+  script: main.application
+
+  
